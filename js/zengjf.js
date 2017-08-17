@@ -9,6 +9,8 @@ $(function(){
 	    startHeartAnimation();
 	}, 5000);
 
+    $("#code").css("visibility","visible");
     adjustCodePosition();
 	$("#code").typewriter();
+
 }); 
