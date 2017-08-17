@@ -7,6 +7,7 @@ $(function(){
     background_music.src = "music/try.mp3"; 
     background_music.play(); 
 
+    /*
     $(document).ready(function() {
         addEventListener('touchstart', function (e) {
             background_music.src = 'music/try.mp3';
@@ -16,6 +17,7 @@ $(function(){
             background_music.play();
         });
     });
+    */
     
     setTimeout(function () {
 	    startHeartAnimation();
