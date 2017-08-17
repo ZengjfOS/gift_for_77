@@ -16,10 +16,12 @@ $(function () {
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
 	
+    /*
 	$("#content").css("width", $loveHeart.width() + $("#code").width());
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
+    */
 
     // renderLoop
     setInterval(function () {
@@ -72,7 +74,6 @@ function startHeartAnimation() {
 
 (function($) {
 	$.fn.typewriter = function() {
-        console.info("zengjf");
 		this.each(function() {
 			var $ele = $(this), str = $ele.html(), progress = 0;
 			$ele.html('');
