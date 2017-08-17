@@ -4,20 +4,53 @@
     <meta charset="UTF-8">
     <title>Little Fox Baby</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
   </head>
   
   <body>
     <!-- particles.js container -->
-    <div id="particles-js"></div>
+    <div id="particles-js" align="center">
+      <div style="width:50%;">
+        <div style="position:absolute;color:#FFF;pointer-events: none;">
+          <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+              <div id="messages" style="color:#FFF;">
+                  Little Fox Baby,
+                  <br>
+                  <br>
+                  I have fallen in love with you for
+                <div id="elapseClock"></div>
+              </div>
+              <div id="loveu" style="color:#FFF;">
+                Love u forever and ever.<br/>
+                <div class="signature" style="color:#FFF;">-- Zoro Zeng</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <div style="position:absolute;color:#FFF;pointer-events: none;">
+      <div>
+        <div id="code" style="color:#FFF;" align="left">
+          i.liveHappilyWith(u);<br />
+        </div>
+      </div>
+    </div>
     <!-- stats - count particles -->
+    <!--
     <div class="count-particles" style="display:none">
       <span class="js-count-particles">--</span> particles
     </div>
-
-    <div style="position:absolute;color:#FFF">
-      <h1> zengjf </h1>
-    </div>
+    -->
 
     <!-- auto play this music as background music -->
     <audio src="music/try.mp3" id="background_music" style="opacity:0" preload="auto" controls loop hidden="true"></audio>
@@ -29,6 +62,8 @@
     -->
     <script src='js/jquery-3.2.1.min.js'></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
     <script src="js/zengjf.js"></script>
   </body>
 </html>
