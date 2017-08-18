@@ -28,12 +28,14 @@ $(function(){
 	    startHeartAnimation();
 	}, 5000);
 
+    /*
     $('.fireworks').fireworks({ 
         sound: false, // 声音效果
         opacity: 0.3, 
         width: '100%', 
         height: '100%'
     });
+    */
 
     $("#code").css("visibility","visible");
     adjustCodePosition();
